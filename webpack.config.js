@@ -4,13 +4,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = (env) => {
     const prod = env && env.production;
 
+    console.log('Environment: ' + (prod ? 'production' : 'development'));
+
     return {
         entry: {
             polyfills: root('src/polyfills.js'),
             main: root('src/main.js')
         },
         output: {
-            path: prod ? '' : root('dist'),
+            path: root('dist'),
             filename: prod ? '[name].[chunkhash].js' : '[name].js',
             publicPath: prod ? '' : '/dist/'
         },
