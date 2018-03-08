@@ -10,7 +10,7 @@ export class Application {
 
         this.root.innerHTML = `
             <div class="row">
-                <h1>Hello web-components</h1>
+                <h1>Micro Frontends & Web Components</h1>
 
                 <div style="margin-top: 3rem">
                     <label for="title">Title:</label>
@@ -23,8 +23,9 @@ export class Application {
                     <h2>Separately Running Multiple Apps</h2>
                     <angular-app title="Angular Separate Running App"></angular-app>
                     <react-app title="React Separate Running App"></react-app>
+                    <react-app-old title="React v0.14.0 Separate Running App"></react-app-old>
                 </div>
-                
+
                 <div>
                     <h2>Rendering Apps in Same Container</h2>
 
@@ -35,8 +36,9 @@ export class Application {
                     </div>
 
                     <div>
-                        <button data-app="angular-app">Load Angular app</button>
-                        <button data-app="react-app">Load React app</button>
+                        <button data-app="angular-app">Load Angular App</button>
+                        <button data-app="react-app">Load React App</button>
+                        <button data-app="react-app-old">Load React v0.14.0 App</button>
                     </div>
                     <div class="container"></div>
                 </div>
