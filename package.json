@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@webcomponents/webcomponentsjs": "^1.0.19",
+    "@webcomponents/webcomponentsjs": "^1.1.0",
     "http-server": "^0.9.0",
     "webcomponents-lite": "^0.6.0"
   },
