@@ -9,7 +9,7 @@ module.exports = (env) => {
             'main': root('src/main.js')
         },
         output: {
-            path: root('dist'),
+            path: root('../dist/microfrontend1'),
             filename: prod ? '[name].[chunkhash].js' : '[name].js',
         },
         resolve: {
