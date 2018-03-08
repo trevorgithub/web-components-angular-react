@@ -12,12 +12,14 @@ module.exports = (env) => {
         output: {
             path: root('dist'),
             filename: prod ? '[name].[chunkhash].js' : '[name].js',
+            publicPath: '/dist/'
         },
         resolve: {
             extensions: ['.js']
         },
         devServer: {
             port: 4300,
+            contentBase: 'dist'
         },
         devtool: 'source-map',
         module: {
