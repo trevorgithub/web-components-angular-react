@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/dist/";
+/******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 9);
@@ -249,7 +249,7 @@ function () {
     key: "bootstrap",
     value: function bootstrap(root) {
       this.root = root;
-      this.root.innerHTML = "\n            <div class=\"row\">\n                <h1>Hello web-components</h1>\n\n                <div style=\"margin-top: 3rem\">\n                    <label for=\"title\">Title:</label>\n                    <input id=\"title\" name=\"title\" value=\"".concat(this.title, "\">\n                </div>\n            </div>\n\n            <div class=\"row\">\n                <div>\n                    <h2>Separately Running Multiple Apps</h2>\n                    <angular-app title=\"Angular Separate Running App\"></angular-app>\n                    <react-app title=\"React Separate Running App\"></react-app>\n                    <react-app-old title=\"React v0.14.0 Separate Running App\"></react-app-old>\n                </div>\n\n                <div>\n                    <h2>Rendering Apps in Same Container</h2>\n\n                    <div>\n                        <p>Error Mode</p>\n                        <input type=\"radio\" name=\"errorMode\" value=\"0\" checked> Disabled\n                        <input type=\"radio\" name=\"errorMode\" value=\"1\"> Enabled\n                    </div>\n\n                    <div>\n                        <button data-app=\"angular-app\">Load Angular app</button>\n                        <button data-app=\"react-app\">Load React app</button>\n                        <button data-app=\"react-app-old\">Load React v0.14.0 app</button>\n                    </div>\n                    <div class=\"container\"></div>\n                </div>\n            </div>\n            ");
+      this.root.innerHTML = "\n            <div class=\"row\">\n                <h1>Micro Frontends & Web Components</h1>\n\n                <div style=\"margin-top: 3rem\">\n                    <label for=\"title\">Title:</label>\n                    <input id=\"title\" name=\"title\" value=\"".concat(this.title, "\">\n                </div>\n            </div>\n\n            <div class=\"row\">\n                <div>\n                    <h2>Separately Running Multiple Apps</h2>\n                    <angular-app title=\"Angular Separate Running App\"></angular-app>\n                    <react-app title=\"React Separate Running App\"></react-app>\n                    <react-app-old title=\"React v0.14.0 Separate Running App\"></react-app-old>\n                </div>\n\n                <div>\n                    <h2>Rendering Apps in Same Container</h2>\n\n                    <div>\n                        <p>Error Mode</p>\n                        <input type=\"radio\" name=\"errorMode\" value=\"0\" checked> Disabled\n                        <input type=\"radio\" name=\"errorMode\" value=\"1\"> Enabled\n                    </div>\n\n                    <div>\n                        <button data-app=\"angular-app\">Load Angular App</button>\n                        <button data-app=\"react-app\">Load React App</button>\n                        <button data-app=\"react-app-old\">Load React v0.14.0 App</button>\n                    </div>\n                    <div class=\"container\"></div>\n                </div>\n            </div>\n            ");
       this.container = this.root.querySelector('.container');
       this.root.addEventListener('keyup', this.handleInputChange);
       this.root.addEventListener('change', this.handleInputChange);
@@ -572,4 +572,4 @@ module.exports = function (bitmap, value) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=main.d43bae78c5f68098af52.js.map
