@@ -12,7 +12,7 @@ module.exports = (env) => {
         output: {
             path: root('dist'),
             filename: prod ? '[name].[chunkhash].js' : '[name].js',
-            publicPath: '/dist/'
+            publicPath: prod ? '' : '/dist/'
         },
         resolve: {
             extensions: ['.js']
