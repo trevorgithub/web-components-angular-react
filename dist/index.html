@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web components loader</title>
+    <script type="text/javascript" src="polyfills.js"></script>
+    <link rel="import" href="./dist/microfrontend1">
+    <link rel="import" href="./dist/microfrontend2">
+    <style>
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+        .row > * {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
