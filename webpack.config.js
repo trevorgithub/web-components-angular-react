@@ -10,7 +10,7 @@ module.exports = (env) => {
             main: root('src/main.js')
         },
         output: {
-            path: root('dist'),
+            path: prod ? '' : root('dist'),
             filename: prod ? '[name].[chunkhash].js' : '[name].js',
             publicPath: prod ? '' : '/dist/'
         },
