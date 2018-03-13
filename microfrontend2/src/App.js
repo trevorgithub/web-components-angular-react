@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export class App extends Component {
     state = {
-        hello: 'React Web Component'
+        hello: 'React v15 Web Component'
     };
 
     render() {
