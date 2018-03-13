@@ -9,24 +9,17 @@ export class Application {
         this.root = root;
 
         this.root.innerHTML = `
+            <h1>Micro Frontends & Web Components</h1>
             <div class="row">
-                <h1>Micro Frontends & Web Components</h1>
-
-                <div style="margin-top: 3rem">
-                    <label for="title">Title:</label>
-                    <input id="title" name="title" value="${this.title}">
-                </div>
-            </div>
-
-            <div class="row">
-                <div>
+                <div class="col-sm">
                     <h2>Separately Running Multiple Apps</h2>
                     <angular-app title="Angular Separate Running App"></angular-app>
                     <react-app title="React v15 Separate Running App"></react-app>
                     <react-app-old title="React v0.14 Separate Running App"></react-app-old>
                 </div>
-
-                <div>
+                <div class="col-sm" style="margin-top: 3rem">
+                    <label for="title">Title:</label>
+                    <input class="form-control" id="title" name="title" value="${this.title}">
                     <h2>Rendering Apps in Same Container</h2>
 
                     <div>
@@ -36,16 +29,16 @@ export class Application {
                     </div>
 
                     <div>
-                        <button data-app="angular-app">Load Angular App</button>
-                        <button data-app="react-app">Load React v15 App</button>
-                        <button data-app="react-app-old">Load React v0.14 App</button>
+                        <button class="btn btn-default" data-app="angular-app">Load Angular App</button>
+                        <button class="btn btn-default" data-app="react-app">Load React v15 App</button>
+                        <button class="btn btn-default" data-app="react-app-old">Load React v0.14 App</button>
                     </div>
-                    <div class="container"></div>
+                    <div id="main"></div>
                 </div>
             </div>
             `;
 
-        this.container = this.root.querySelector('.container');
+        this.container = this.root.querySelector('#main');
         this.root.addEventListener('keyup', this.handleInputChange);
         this.root.addEventListener('change', this.handleInputChange);
         this.root.addEventListener('click', this.handleButtonClick);
