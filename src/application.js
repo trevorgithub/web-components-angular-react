@@ -17,11 +17,10 @@ export class Application {
                     <react-app title="React v15 Separate Running App"></react-app>
                     <react-app-old title="React v0.14 Separate Running App"></react-app-old>
                 </div>
-                <div class="col-sm" style="margin-top: 3rem">
+                <div class="col-sm">
+                    <h2>Rendering Apps in Same Container</h2>
                     <label for="title">Title:</label>
                     <input class="form-control" id="title" name="title" value="${this.title}">
-                    <h2>Rendering Apps in Same Container</h2>
-
                     <div>
                         <p>Error Mode</p>
                         <input type="radio" name="errorMode" value="0" checked> Disabled
