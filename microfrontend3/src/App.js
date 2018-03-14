@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export class App extends Component {
     state = {
-        hello: 'React v0.14 Web Component'
+        hello: 'React 0.14 Web Component'
     };
 
     render() {

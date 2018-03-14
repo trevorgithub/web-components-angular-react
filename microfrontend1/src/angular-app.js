@@ -29,10 +29,12 @@ export class AngularApp extends HTMLElement {
         this.dispatchEvent(new CustomEvent('error', {detail: e}));
     }
 
-    constructor() {
-        super();
+    constructor(self) {
+        self = super(self);
 
         console.log('AngularApp constructor', this);
+
+        return self;
     }
 
     connectedCallback() {

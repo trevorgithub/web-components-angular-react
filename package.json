@@ -11,9 +11,9 @@
     "build": "run-s clean:dist build:prod build:microfrontends",
     "build:prod": "webpack --env.production",
     "build:microfrontends": "run-p build:microfrontend1 build:microfrontend2 build:microfrontend3",
-    "build:microfrontend1": "./microfrontend1/node_modules/.bin/webpack --config ./microfrontend1/webpack.config.js",
-    "build:microfrontend2": "./microfrontend2/node_modules/.bin/webpack --config ./microfrontend2/webpack.config.js",
-    "build:microfrontend3": "./microfrontend3/node_modules/.bin/webpack --config ./microfrontend3/webpack.config.js",
+    "build:microfrontend1": "./microfrontend1/node_modules/.bin/webpack --config ./microfrontend1/webpack.prod.js",
+    "build:microfrontend2": "./microfrontend2/node_modules/.bin/webpack --config ./microfrontend2/webpack.prod.js",
+    "build:microfrontend3": "./microfrontend3/node_modules/.bin/webpack --config ./microfrontend3/webpack.prod.js",
     "deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -40,6 +40,7 @@
     "npm-run-all": "^4.1.2",
     "rimraf": "^2.6.2",
     "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.4"
+    "webpack-dev-server": "^2.9.4",
+    "webpack-merge": "^4.1.2"
   }
 }

@@ -14,8 +14,8 @@ export class Application {
                 <div class="col-sm">
                     <h2>Separately Running Multiple Apps</h2>
                     <angular-app title="Angular Separate Running App"></angular-app>
-                    <react-app title="React v15 Separate Running App"></react-app>
-                    <react-app-old title="React v0.14 Separate Running App"></react-app-old>
+                    <react-app title="React 15 Separate Running App"></react-app>
+                    <react-app-old title="React 0.14 Separate Running App"></react-app-old>
                 </div>
                 <div class="col-sm">
                     <h2>Rendering Apps in Same Container</h2>
@@ -29,8 +29,8 @@ export class Application {
 
                     <div>
                         <button class="btn btn-default" data-app="angular-app">Load Angular App</button>
-                        <button class="btn btn-default" data-app="react-app">Load React v15 App</button>
-                        <button class="btn btn-default" data-app="react-app-old">Load React v0.14 App</button>
+                        <button class="btn btn-default" data-app="react-app">Load React 15 App</button>
+                        <button class="btn btn-default" data-app="react-app-old">Load React 0.14 App</button>
                     </div>
                     <div id="main"></div>
                 </div>
