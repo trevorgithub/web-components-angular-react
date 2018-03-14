@@ -2,9 +2,7 @@ import React from 'react'
 import { render } from 'react-dom';
 import { App } from './App';
 
-export class ReactApp extends HTMLElement {
-    static name = 'react-app-old';
-
+window.customElements.define('react-app-old', class ReactApp extends HTMLElement {
     static get observedAttributes() {
         return ['error-mode', 'title'];
     }
@@ -66,4 +64,4 @@ export class ReactApp extends HTMLElement {
                 this.render();
         }
     }
-}
+});

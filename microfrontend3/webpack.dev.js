@@ -4,10 +4,6 @@ const common = require('./webpack.common.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(common, {
-    entry: {
-        'polyfills': path.resolve(__dirname, 'src/polyfills.js'),
-        'application': path.resolve(__dirname, 'src/application.js')
-    },
     output: {
         filename: '[name].js',
     },

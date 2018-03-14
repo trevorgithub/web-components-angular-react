@@ -1,9 +1,7 @@
 import * as angular from 'angular';
 import { AppModule, html } from './app.module';
 
-export class AngularApp extends HTMLElement {
-    static name = 'angular-app';
-
+window.customElements.define('angular-app', class AngularApp extends HTMLElement {
     static get observedAttributes() {
         return ['error-mode', 'title'];
     }
@@ -86,4 +84,4 @@ export class AngularApp extends HTMLElement {
                 return;
         }
     }
-}
+});

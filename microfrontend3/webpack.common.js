@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        'main': path.resolve(__dirname, 'src/main.js')
+        'polyfills': path.resolve(__dirname, 'src/polyfills.js'),
+        'main': path.resolve(__dirname, 'src/react-app.js')
     },
     resolve: {
         extensions: ['.js']
