@@ -503,14 +503,6 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@webcomponents/custom-elements@^1.0.6":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@webcomponents/custom-elements/-/custom-elements-1.0.8.tgz#b7b8ef7248f7681d1ad4286a0ada5fe3c2bc7228"
-
-"@webcomponents/webcomponentsjs@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@webcomponents/webcomponentsjs/-/webcomponentsjs-1.1.0.tgz#1392799c266fca142622a720176f688beb74d181"
-
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -4483,10 +4475,6 @@ wbuf@^1.1.0, wbuf@^1.7.2:
   resolved "https://registry.yarnpkg.com/wbuf/-/wbuf-1.7.2.tgz#d697b99f1f59512df2751be42769c1580b5801fe"
   dependencies:
     minimalistic-assert "^1.0.0"
-
-webcomponents-lite@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/webcomponents-lite/-/webcomponents-lite-0.6.0.tgz#d5e10ccba591711d45c15c64976bfc4f8f6157cb"
 
 webpack-dev-middleware@1.12.2:
   version "1.12.2"

@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        'polyfills': path.resolve(__dirname, 'src/polyfills.js'),
         'main': path.resolve(__dirname, 'src/angular-app.js')
     },
     resolve: {

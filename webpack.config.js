@@ -8,7 +8,6 @@ module.exports = (env) => {
 
     return {
         entry: {
-            polyfills: root('src/polyfills.js'),
             main: root('src/main.js')
         },
         output: {
