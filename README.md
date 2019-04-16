@@ -1,10 +1,13 @@
 # Description
-* Three micro frontends built with different technologies (React v15, React v0.14, and Angular) wrapped in Web Components
-* Integration happen through another high-level Web Component called "Application"
-* Micro frontends are referenced using `<link rel="import" href="microfrontend1">`
-* The `Application` component is automatically rendered when the main script loads
+* Three micro frontends built with different technologies (React v15, React v0.14, and Angular)
+* Each micro frontend is wrapped in Web Components
+* Integration happen through another high-level Web Component
+* Micro frontends are imported using HTML imports
+* The main application is automatically rendered when the main script loads
 * CDNs are used for the web components polyfills and bootstrap styling
-* Each micro frontend distribution will contain an `index.html` with block styling and the script tag to load its JavaScript dependency.
+* Each micro frontend distribution contains an index.html that will self initialize
+* The application allows to manually load each different micro frontend on-demand
+* The application allows to change the title of each frontend loaded on-demand
 
 Note: Ideally these micro frontends will come from remote servers, but take in consideration that most servers will block [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) by default.
 
